@@ -10,14 +10,14 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.teamproject.MainActivity
 import com.example.teamproject.R
 
-class Notice : AppCompatActivity() {
+class favorites : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_notice)
+        setContentView(R.layout.activity_favorites)
 
-        val arrowBtn2 = findViewById<ImageView>(R.id.btn_arrow2)
+        val arrowBtn3 = findViewById<ImageView>(R.id.btn_arrow3)
 
-        arrowBtn2.setOnClickListener {
+        arrowBtn3.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }

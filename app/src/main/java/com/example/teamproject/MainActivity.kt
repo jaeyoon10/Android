@@ -8,16 +8,24 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.teamproject.setting.Notice
+import com.example.teamproject.setting.favorites
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val myPageBtn = findViewById<ImageView>(R.id.btn_notice)
+        val noticeBtn = findViewById<ImageView>(R.id.btn_notice)
 
-        myPageBtn.setOnClickListener {
+        noticeBtn.setOnClickListener {
             val intent = Intent(this, Notice::class.java)
+            startActivity(intent)
+        }
+
+        val favoritesBtn = findViewById<ImageView>(R.id.btn_favorites)
+
+        favoritesBtn.setOnClickListener {
+            val intent = Intent(this, favorites::class.java)
             startActivity(intent)
         }
     }

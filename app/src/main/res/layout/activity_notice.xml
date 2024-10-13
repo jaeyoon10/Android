@@ -5,23 +5,23 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".setting.Notice">
+    tools:context=".setting.Notice"
+    android:padding="16dp">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:gravity="center"
         android:text="공지사항"
         android:textSize="24dp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="4dp"
+        android:gravity="center"/>
 
     <ImageView
-        android:id="@+id/btn_arrow"
+        android:id="@+id/btn_arrow2"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:src="@drawable/arrow" />
@@ -36,31 +36,32 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
-        android:id="@+id/btn_notice1"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:src="@drawable/notice"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="68dp" />
+    <!-- 공지 아이콘 -->
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:layout_marginTop="130dp"
-        android:background="#BDBDBD"
+    <ImageView
+        android:id="@+id/noticeIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:contentDescription="Notice icon"
+        android:src="@drawable/notice"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.103" />
+
+    <TextView
+        android:id="@+id/noticeText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:text="공지사항입니다"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/btn_notice2"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:src="@drawable/notice"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="150dp" />
+        app:layout_constraintStart_toEndOf="@id/noticeIcon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.101" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
