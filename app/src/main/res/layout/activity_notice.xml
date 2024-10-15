@@ -8,6 +8,8 @@
     tools:context=".setting.Notice"
     android:padding="16dp">
 
+    <!--상단 공지사항 텍스트-->
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -20,11 +22,15 @@
         android:layout_marginTop="4dp"
         android:gravity="center"/>
 
+    <!--뒤로가기 이미지-->
+
     <ImageView
         android:id="@+id/btn_arrow2"
         android:layout_width="40dp"
         android:layout_height="40dp"
         android:src="@drawable/arrow" />
+
+    <!--상단 밑 선-->
 
     <View
         android:layout_width="match_parent"
@@ -48,6 +54,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.103" />
+
+    <!--공지 텍스트-->
 
     <TextView
         android:id="@+id/noticeText"

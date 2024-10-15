@@ -15,6 +15,8 @@ class favorites : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_favorites)
 
+        /* 즐겨찾기 뒤로가기 코드 */
+
         val arrowBtn3 = findViewById<ImageView>(R.id.btn_arrow3)
 
         arrowBtn3.setOnClickListener {

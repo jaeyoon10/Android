@@ -10,16 +10,16 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.teamproject.MainActivity
 import com.example.teamproject.R
 
-class Notice : AppCompatActivity() {
+class Human : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_notice)
+        setContentView(R.layout.activity_human)
 
-        /* 공지사항 뒤로가기 코드 */
+        /* 개인정보 뒤로가기 코드 */
 
-        val arrowBtn2 = findViewById<ImageView>(R.id.btn_arrow2)
+        val arrowBtn4 = findViewById<ImageView>(R.id.btn_arrow4)
 
-        arrowBtn2.setOnClickListener {
+        arrowBtn4.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
